@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/second_layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:gravity="center_horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Экран 2 — Свайп вправо →"
+            android:textSize="24sp"
+            android:textStyle="bold"
+            android:layout_marginBottom="24dp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Выберите сложность:"
+            android:layout_gravity="start" />
+
+        <RadioGroup
+            android:id="@+id/rgDifficulty"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <RadioButton
+                android:id="@+id/rbEasy"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Лёгкая"
+                android:checked="true" />
+
+            <RadioButton
+                android:id="@+id/rbMedium"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Средняя" />
+
+            <RadioButton
+                android:id="@+id/rbHard"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Сложная" />
+        </RadioGroup>
+
+        <TextView
+            android:id="@+id/tvDifficulty"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Выбрано: Лёгкая"
+            android:layout_marginTop="16dp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="24dp"
+            android:text="Прокрутите экран вниз, чтобы увидеть остальной контент.\n\nСвайп вправо → Экран 3.\n\n1. Первый пункт.\n2. Второй пункт.\n3. Третий пункт.\n4. Четвёртый пункт.\n5. Пятый пункт.\n6. Шестой пункт.\n7. Седьмой пункт.\n8. Восьмой пункт.\n9. Девятый пункт.\n10. Десятый пункт." />
+
+    </LinearLayout>
+</ScrollView>
